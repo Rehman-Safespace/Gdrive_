@@ -1,3 +1,26 @@
 name = "gdrive"
 main = "index.js"
 compatibility_date = "2026-10-12"
+
+[[kv_namespaces]]
+binding = "VISITORS_KV"
+id = "38f1472846024dcba22efe422fdfa0ba"
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+redact_query_string = false
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
+[observability.traces]
+enabled = true
+head_sampling_rate = 1
+persist = true
+
+[observability.issues]
+enabled = true
